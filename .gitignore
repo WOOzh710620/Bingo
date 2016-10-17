@@ -1,0 +1,10 @@
+Backup
+obj
+bin
+*.scc
+*.user
+*.suo
+*.sln
+*.html
+*.htm
+*.bak
