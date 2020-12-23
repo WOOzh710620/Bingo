@@ -36,10 +36,10 @@ Partial Class frmSetting
         '
         Me.tbSpeed.LargeChange = 100
         Me.tbSpeed.Location = New System.Drawing.Point(214, 38)
-        Me.tbSpeed.Maximum = 1000
+        Me.tbSpeed.Maximum = 500
         Me.tbSpeed.Minimum = 100
         Me.tbSpeed.Name = "tbSpeed"
-        Me.tbSpeed.Size = New System.Drawing.Size(242, 42)
+        Me.tbSpeed.Size = New System.Drawing.Size(242, 45)
         Me.tbSpeed.SmallChange = 10
         Me.tbSpeed.TabIndex = 0
         Me.tbSpeed.Value = 100
@@ -68,11 +68,11 @@ Partial Class frmSetting
         '
         Me.tbSize.Location = New System.Drawing.Point(214, 113)
         Me.tbSize.Maximum = 99
-        Me.tbSize.Minimum = 1
+        Me.tbSize.Minimum = 9
         Me.tbSize.Name = "tbSize"
-        Me.tbSize.Size = New System.Drawing.Size(242, 42)
+        Me.tbSize.Size = New System.Drawing.Size(242, 45)
         Me.tbSize.TabIndex = 0
-        Me.tbSize.Value = 1
+        Me.tbSize.Value = 14
         '
         'lblSpeed
         '

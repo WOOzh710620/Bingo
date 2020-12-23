@@ -36,10 +36,15 @@ Partial Class frmMain
         Me.lblNumber = New System.Windows.Forms.Label
         Me.txtTotalNumber = New System.Windows.Forms.TextBox
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.mnuRestart = New System.Windows.Forms.ToolStripMenuItem
+        Me.mnuOpen = New System.Windows.Forms.ToolStripMenuItem
+        Me.opfDialog = New System.Windows.Forms.OpenFileDialog
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -57,7 +62,7 @@ Partial Class frmMain
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.987949!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.61034!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.40171!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(816, 542)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(847, 525)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'TableLayoutPanel2
@@ -68,12 +73,12 @@ Partial Class frmMain
         Me.TableLayoutPanel2.Controls.Add(Me.btnGetNumber, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(11, 460)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(11, 446)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 2
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.71698!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.28302!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(793, 79)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(824, 76)
         Me.TableLayoutPanel2.TabIndex = 3
         '
         'btnGetNumber
@@ -81,9 +86,9 @@ Partial Class frmMain
         Me.btnGetNumber.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnGetNumber.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnGetNumber.Font = New System.Drawing.Font("新細明體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.btnGetNumber.Location = New System.Drawing.Point(3, 46)
+        Me.btnGetNumber.Location = New System.Drawing.Point(3, 44)
         Me.btnGetNumber.Name = "btnGetNumber"
-        Me.btnGetNumber.Size = New System.Drawing.Size(787, 30)
+        Me.btnGetNumber.Size = New System.Drawing.Size(818, 29)
         Me.btnGetNumber.TabIndex = 0
         Me.btnGetNumber.Text = "開           獎   (Enter)"
         Me.btnGetNumber.UseVisualStyleBackColor = False
@@ -104,7 +109,7 @@ Partial Class frmMain
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(787, 37)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(818, 35)
         Me.TableLayoutPanel3.TabIndex = 1
         '
         'Label1
@@ -112,9 +117,9 @@ Partial Class frmMain
         Me.Label1.AutoSize = True
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label1.Font = New System.Drawing.Font("新細明體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.Label1.Location = New System.Drawing.Point(395, 0)
+        Me.Label1.Location = New System.Drawing.Point(411, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(190, 37)
+        Me.Label1.Size = New System.Drawing.Size(198, 35)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "結束號碼"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -126,7 +131,7 @@ Partial Class frmMain
         Me.Label2.Font = New System.Drawing.Font("新細明體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label2.Location = New System.Drawing.Point(3, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(190, 37)
+        Me.Label2.Size = New System.Drawing.Size(198, 35)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "開始號碼"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -136,9 +141,9 @@ Partial Class frmMain
         Me.txtStart.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txtStart.Font = New System.Drawing.Font("新細明體", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.txtStart.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.txtStart.Location = New System.Drawing.Point(199, 3)
+        Me.txtStart.Location = New System.Drawing.Point(207, 3)
         Me.txtStart.Name = "txtStart"
-        Me.txtStart.Size = New System.Drawing.Size(190, 30)
+        Me.txtStart.Size = New System.Drawing.Size(198, 30)
         Me.txtStart.TabIndex = 1
         Me.txtStart.Text = "1"
         Me.txtStart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -148,9 +153,9 @@ Partial Class frmMain
         Me.txtEnd.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txtEnd.Font = New System.Drawing.Font("新細明體", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.txtEnd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.txtEnd.Location = New System.Drawing.Point(591, 3)
+        Me.txtEnd.Location = New System.Drawing.Point(615, 3)
         Me.txtEnd.Name = "txtEnd"
-        Me.txtEnd.Size = New System.Drawing.Size(193, 30)
+        Me.txtEnd.Size = New System.Drawing.Size(200, 30)
         Me.txtEnd.TabIndex = 2
         Me.txtEnd.Text = "99"
         Me.txtEnd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -167,19 +172,20 @@ Partial Class frmMain
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 1
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 441.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(793, 441)
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 427.0!))
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(824, 427)
         Me.TableLayoutPanel4.TabIndex = 4
         '
         'lblNumber
         '
         Me.lblNumber.AutoSize = True
         Me.lblNumber.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblNumber.ContextMenuStrip = Me.ContextMenuStrip1
         Me.lblNumber.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblNumber.Font = New System.Drawing.Font("新細明體", 198.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.lblNumber.Location = New System.Drawing.Point(3, 0)
         Me.lblNumber.Name = "lblNumber"
-        Me.lblNumber.Size = New System.Drawing.Size(390, 441)
+        Me.lblNumber.Size = New System.Drawing.Size(406, 427)
         Me.lblNumber.TabIndex = 1
         Me.lblNumber.Text = "99"
         Me.lblNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -189,23 +195,45 @@ Partial Class frmMain
         Me.txtTotalNumber.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtTotalNumber.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txtTotalNumber.Font = New System.Drawing.Font("新細明體", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.txtTotalNumber.Location = New System.Drawing.Point(399, 3)
+        Me.txtTotalNumber.Location = New System.Drawing.Point(415, 3)
         Me.txtTotalNumber.Multiline = True
         Me.txtTotalNumber.Name = "txtTotalNumber"
         Me.txtTotalNumber.ReadOnly = True
         Me.txtTotalNumber.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtTotalNumber.Size = New System.Drawing.Size(391, 435)
+        Me.txtTotalNumber.Size = New System.Drawing.Size(406, 421)
         Me.txtTotalNumber.TabIndex = 3
         '
         'Timer1
         '
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuRestart, Me.mnuOpen})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(145, 48)
+        '
+        'mnuRestart
+        '
+        Me.mnuRestart.Name = "mnuRestart"
+        Me.mnuRestart.Size = New System.Drawing.Size(144, 22)
+        Me.mnuRestart.Text = "重新開始(&r)"
+        '
+        'mnuOpen
+        '
+        Me.mnuOpen.Name = "mnuOpen"
+        Me.mnuOpen.Size = New System.Drawing.Size(144, 22)
+        Me.mnuOpen.Text = "開啟舊計錄(&o)"
+        '
+        'opfDialog
+        '
+        Me.opfDialog.FileName = "OpenFileDialog1"
         '
         'frmMain
         '
         Me.AcceptButton = Me.btnGetNumber
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(816, 542)
+        Me.ClientSize = New System.Drawing.Size(847, 525)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMain"
@@ -216,6 +244,7 @@ Partial Class frmMain
         Me.TableLayoutPanel3.PerformLayout()
         Me.TableLayoutPanel4.ResumeLayout(False)
         Me.TableLayoutPanel4.PerformLayout()
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -231,5 +260,9 @@ Partial Class frmMain
     Friend WithEvents txtStart As System.Windows.Forms.TextBox
     Friend WithEvents txtEnd As System.Windows.Forms.TextBox
     Friend WithEvents TableLayoutPanel4 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents mnuRestart As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuOpen As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents opfDialog As System.Windows.Forms.OpenFileDialog
 
 End Class
