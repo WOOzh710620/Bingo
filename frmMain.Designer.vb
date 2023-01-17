@@ -22,24 +22,24 @@ Partial Class frmMain
     '請不要使用程式碼編輯器進行修改。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel
-        Me.btnGetNumber = New System.Windows.Forms.Button
-        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.txtStart = New System.Windows.Forms.TextBox
-        Me.txtEnd = New System.Windows.Forms.TextBox
-        Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel
-        Me.lblNumber = New System.Windows.Forms.Label
-        Me.txtTotalNumber = New System.Windows.Forms.TextBox
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.btnGetNumber = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtStart = New System.Windows.Forms.TextBox()
+        Me.txtEnd = New System.Windows.Forms.TextBox()
+        Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblNumber = New System.Windows.Forms.Label()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.mnuRestart = New System.Windows.Forms.ToolStripMenuItem
-        Me.mnuOpen = New System.Windows.Forms.ToolStripMenuItem
-        Me.opfDialog = New System.Windows.Forms.OpenFileDialog
+        Me.mnuRestart = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuOpen = New System.Windows.Forms.ToolStripMenuItem()
+        Me.txtTotalNumber = New System.Windows.Forms.TextBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.opfDialog = New System.Windows.Forms.OpenFileDialog()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
@@ -60,9 +60,9 @@ Partial Class frmMain
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 3
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.987949!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.61034!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.40171!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(847, 525)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.50273!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.67577!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(847, 549)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'TableLayoutPanel2
@@ -73,12 +73,12 @@ Partial Class frmMain
         Me.TableLayoutPanel2.Controls.Add(Me.btnGetNumber, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(11, 446)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(11, 432)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 2
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.71698!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.28302!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(824, 76)
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.29914!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.70086!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(824, 114)
         Me.TableLayoutPanel2.TabIndex = 3
         '
         'btnGetNumber
@@ -86,9 +86,9 @@ Partial Class frmMain
         Me.btnGetNumber.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnGetNumber.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnGetNumber.Font = New System.Drawing.Font("新細明體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.btnGetNumber.Location = New System.Drawing.Point(3, 44)
+        Me.btnGetNumber.Location = New System.Drawing.Point(3, 54)
         Me.btnGetNumber.Name = "btnGetNumber"
-        Me.btnGetNumber.Size = New System.Drawing.Size(818, 29)
+        Me.btnGetNumber.Size = New System.Drawing.Size(818, 57)
         Me.btnGetNumber.TabIndex = 0
         Me.btnGetNumber.Text = "開           獎   (Enter)"
         Me.btnGetNumber.UseVisualStyleBackColor = False
@@ -109,7 +109,7 @@ Partial Class frmMain
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(818, 35)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(818, 45)
         Me.TableLayoutPanel3.TabIndex = 1
         '
         'Label1
@@ -119,7 +119,7 @@ Partial Class frmMain
         Me.Label1.Font = New System.Drawing.Font("新細明體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label1.Location = New System.Drawing.Point(411, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(198, 35)
+        Me.Label1.Size = New System.Drawing.Size(198, 45)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "結束號碼"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -131,7 +131,7 @@ Partial Class frmMain
         Me.Label2.Font = New System.Drawing.Font("新細明體", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.Label2.Location = New System.Drawing.Point(3, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(198, 35)
+        Me.Label2.Size = New System.Drawing.Size(198, 45)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "開始號碼"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -173,7 +173,7 @@ Partial Class frmMain
         Me.TableLayoutPanel4.RowCount = 1
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 427.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(824, 427)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(824, 413)
         Me.TableLayoutPanel4.TabIndex = 4
         '
         'lblNumber
@@ -185,10 +185,28 @@ Partial Class frmMain
         Me.lblNumber.Font = New System.Drawing.Font("新細明體", 198.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.lblNumber.Location = New System.Drawing.Point(3, 0)
         Me.lblNumber.Name = "lblNumber"
-        Me.lblNumber.Size = New System.Drawing.Size(406, 427)
+        Me.lblNumber.Size = New System.Drawing.Size(406, 413)
         Me.lblNumber.TabIndex = 1
         Me.lblNumber.Text = "99"
         Me.lblNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuRestart, Me.mnuOpen})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(151, 48)
+        '
+        'mnuRestart
+        '
+        Me.mnuRestart.Name = "mnuRestart"
+        Me.mnuRestart.Size = New System.Drawing.Size(150, 22)
+        Me.mnuRestart.Text = "重新開始(&r)"
+        '
+        'mnuOpen
+        '
+        Me.mnuOpen.Name = "mnuOpen"
+        Me.mnuOpen.Size = New System.Drawing.Size(150, 22)
+        Me.mnuOpen.Text = "開啟舊計錄(&o)"
         '
         'txtTotalNumber
         '
@@ -200,29 +218,11 @@ Partial Class frmMain
         Me.txtTotalNumber.Name = "txtTotalNumber"
         Me.txtTotalNumber.ReadOnly = True
         Me.txtTotalNumber.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtTotalNumber.Size = New System.Drawing.Size(406, 421)
+        Me.txtTotalNumber.Size = New System.Drawing.Size(406, 407)
         Me.txtTotalNumber.TabIndex = 3
         '
         'Timer1
         '
-        '
-        'ContextMenuStrip1
-        '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuRestart, Me.mnuOpen})
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(145, 48)
-        '
-        'mnuRestart
-        '
-        Me.mnuRestart.Name = "mnuRestart"
-        Me.mnuRestart.Size = New System.Drawing.Size(144, 22)
-        Me.mnuRestart.Text = "重新開始(&r)"
-        '
-        'mnuOpen
-        '
-        Me.mnuOpen.Name = "mnuOpen"
-        Me.mnuOpen.Size = New System.Drawing.Size(144, 22)
-        Me.mnuOpen.Text = "開啟舊計錄(&o)"
         '
         'opfDialog
         '
@@ -233,7 +233,7 @@ Partial Class frmMain
         Me.AcceptButton = Me.btnGetNumber
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(847, 525)
+        Me.ClientSize = New System.Drawing.Size(847, 549)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMain"

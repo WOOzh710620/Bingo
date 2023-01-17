@@ -9,16 +9,16 @@ Imports System.Runtime.InteropServices
 ' 檢閱組件屬性的值
 
 <Assembly: AssemblyTitle("Bingo")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("AndreNB007")> 
-<Assembly: AssemblyProduct("Bingo")> 
-<Assembly: AssemblyCopyright("Copyright (C) AndreNB007 2011")> 
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("123 Studio")>
+<Assembly: AssemblyProduct("Bingo")>
+<Assembly: AssemblyCopyright("Copyright (C) AndreKao  2011")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 '下列 GUID 為專案公開 (Expose) 至 COM 時所要使用的 typelib ID
-<Assembly: Guid("d7f09b58-08d4-4971-942d-e65fb41c218b")> 
+<Assembly: Guid("d7f09b58-08d4-4971-942d-e65fb41c218b")>
 
 ' 組件的版本資訊是由下列四項值構成:
 '
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' 指定為預設值:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.1")>
+<Assembly: AssemblyFileVersion("1.0.0.1")>

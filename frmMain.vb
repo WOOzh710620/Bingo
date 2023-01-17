@@ -69,7 +69,10 @@ Public Class frmMain
         For i = 0 To lstNumber.Count - 1
             tmpString = tmpString & lstNumber.Item(i).ToString.Trim & insertString
         Next
-        tmpString = Microsoft.VisualBasic.Left(tmpString, tmpString.Length - insertString.Length)
+        If tmpString.Trim <> "" Then
+            tmpString = Microsoft.VisualBasic.Left(tmpString, tmpString.Length - insertString.Length)
+        End If
+
         txtTotalNumber.Text = tmpString
         Me.writeLog(tmpString)
 
@@ -227,14 +230,17 @@ Public Class frmMain
         If opfDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
             If Not _lstNumber Is Nothing Then Me._lstNumber.Clear()
             If Not _lstSortNumber Is Nothing Then Me._lstSortNumber.Clear()
-
+            _logFile = opfDialog.FileName
             ReadEndLine = ReadNLine2End(opfDialog.FileName)  '取出最後一行
 
             splString = ReadEndLine.Split(",")
-            For intI As Integer = 0 To splString.GetUpperBound(0) - 1
+            For intI As Integer = 0 To splString.GetUpperBound(0)
                 tmpStr = splString(intI).Trim
-                Me._lstNumber.Add(tmpStr)
-                Me._lstSortNumber.Add(tmpStr)
+                If tmpStr <> "" Then
+                    Me._lstNumber.Add(tmpStr)
+                    Me._lstSortNumber.Add(tmpStr)
+                End If
+
             Next
             Me.lblNumber.Text = tmpStr  '最後一個數字放入開獎欄位中
             ShowNumbers()   '重新顯示開獎結果

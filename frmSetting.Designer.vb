@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmSetting
     Inherits System.Windows.Forms.Form
 
     'Form 覆寫 Dispose 以清除元件清單。
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,14 @@ Partial Class frmSetting
     '注意: 以下為 Windows Form 設計工具所需的程序
     '可以使用 Windows Form 設計工具進行修改。
     '請不要使用程式碼編輯器進行修改。
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.tbSpeed = New System.Windows.Forms.TrackBar
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.tbSize = New System.Windows.Forms.TrackBar
-        Me.lblSpeed = New System.Windows.Forms.Label
-        Me.lblSize = New System.Windows.Forms.Label
+        Me.tbSpeed = New System.Windows.Forms.TrackBar()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.tbSize = New System.Windows.Forms.TrackBar()
+        Me.lblSpeed = New System.Windows.Forms.Label()
+        Me.lblSize = New System.Windows.Forms.Label()
         CType(Me.tbSpeed, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tbSize, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -98,7 +98,7 @@ Partial Class frmSetting
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(526, 191)
+        Me.ClientSize = New System.Drawing.Size(525, 178)
         Me.Controls.Add(Me.lblSize)
         Me.Controls.Add(Me.lblSpeed)
         Me.Controls.Add(Me.Label2)
