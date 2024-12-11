@@ -8,7 +8,7 @@ Public Class frmMain
     Private _TotalNumbertmpColor As Color
     Private _numRenge As Integer = 0
     Private _intSize As Integer = 48
-    Private _intTime As Integer = 200
+    Private _intTime As Integer = 1000
 
     Private _lstNumber As New List(Of Integer)  ''原始開獎順序
     Private _lstSortNumber As New List(Of Integer) ''由大到小排序
